@@ -16,13 +16,13 @@ body {
 
 #navbar {
     display: flex;
-    justify-content: center; /* Center the items horizontally */
-    background-color: rgba(0, 0, 0, 0.5); /* Background color for the navbar */
-    padding: 10px; /* Add some padding */
-    position: fixed; /* Fix the navbar at the bottom */
-    width: 100%; /* Full width */
-    z-index: 999; /* Ensure it's above other elements */
-    bottom: 0; /* Position at the bottom */
+    justify-content: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    position: fixed; 
+    width: 100%; 
+    z-index: 999; 
+    bottom: 0; 
 }
 
 
@@ -36,17 +36,17 @@ body {
 }
 
 #portfolio-right ul {
-    list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
+    list-style-type: none; 
+    padding: 0; 
 }
 
 #portfolio-right ul li {
-    margin-bottom: 10px; /* Adjust spacing between list items */
+    margin-bottom: 10px; 
 }
 
 #bottom-link {
     position: fixed;
-    bottom: -700px; /* Adjust the distance from the bottom as needed */
+    bottom: -700px; 
     left: 50%;
     transform: translateX(-50%);
 }
@@ -55,10 +55,10 @@ body {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    top: 20px; /* Adjust as needed */
+    top: 20px; 
     left: 50%;
     transform: translateX(-50%);
-    width: 80%; /* Adjust width as needed */
+    width: 80%; 
     padding: 20px;
     color: white;
     font-family: Arial, sans-serif;
@@ -95,10 +95,10 @@ a:hover {
 
 #projects-button {
     position: fixed;
-    bottom: 20px; /* Adjust the value as needed */
+    bottom: 20px; 
     left: 50%;
     transform: translateX(-50%);
-    z-index: 9999; /* Set a high z-index value */
+    z-index: 9999; 
 }
 
 
