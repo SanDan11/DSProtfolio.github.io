@@ -2,60 +2,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(white, black); 
+    background: black;
     height: 100vh; 
     color: #fff; 
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: black; 
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
-}
-
-.resume-container {
-    text-align: center; 
-}
-
-.resume {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block; 
-    transition: background-color 0.3s ease;
-}
-
-.resume:hover {
-    background-color: #0056b3;
-}
-
-.resume-h1{
-    color: white;
-    text-align: center;
-}
-
-h1, h2, p {
-    color: white;
-    
-}
-
-a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    z-index: 1000; 
-    position: relative; 
-}
 
 a:hover {
     background-color: #0056b3;
@@ -79,6 +30,57 @@ nav ul li {
 }
 
 nav ul li a {
+    padding: 10px 15px;
     text-decoration: none;
     color: #fff;
 }
+
+/* Project styles */
+.card1 {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+}
+
+.wide-card1 {
+    max-width: 800px;
+    width: 90%;
+}
+
+.project-link {
+    color: #ddd; 
+    font-weight: bold; 
+    text-decoration: underline; 
+    border: none; 
+    background-color: transparent; 
+    padding: 0; 
+    transition: color 0.3s ease; 
+}
+
+.project-link:hover {
+    color: #00cc77; 
+    text-decoration: none; 
+}
+
+
+/* Resume Page Styles */
+.resume-container {
+    text-align: center;
+}
+
+.resume {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.resume:hover {
+    background-color: #0056b3;
+}
+

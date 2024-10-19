@@ -11,7 +11,6 @@ a {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -22,7 +21,9 @@ a {
 
 a:hover {
     background-color: #0056b3;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
 }
+
 
 nav {
     background-color: #111; 
@@ -56,6 +57,12 @@ a, nav {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 20px;
+}
+
+#center_title h1 {
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
 #portfolio-right ul {
@@ -95,6 +102,16 @@ a, nav {
 
 #portfolio-right {
     text-align: right;
+}
+
+#portfolio-right h2 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+#portfolio-right ul li {
+    font-size: 1.5rem;
+    color: #dddddd;
 }
 
 h1 {
@@ -238,7 +255,12 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px rgba(255, 255, 0, 0.8);
   }
+
+  #mercury, #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adds a subtle glow */
+}
 
 @keyframes orbit-mercury {
     from { transform: rotate(0deg) translateX(80px) rotate(0deg); }
@@ -278,4 +300,15 @@ h1 {
 @keyframes orbit-neptune {
     from { transform: rotate(0deg) translateX(360px) rotate(0deg); }
     to { transform: rotate(360deg) translateX(360px) rotate(0deg); }
+}
+
+@media (max-width: 600px) {
+    #center_title h1 {
+        font-size: 2rem;
+    }
+
+    #portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
 }
