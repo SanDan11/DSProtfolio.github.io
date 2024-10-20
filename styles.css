@@ -346,13 +346,41 @@ li {
     to { transform: rotate(360deg) translateX(360px) rotate(0deg); }
 }
 
+/* Media queries for mobile devices */
 @media (max-width: 600px) {
     #center_title h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Make the title smaller on smaller screens */
     }
 
-    #portfolio {
-        flex-direction: column;
+    #portfolio-container {
+        flex-direction: column; /* Stack the sections vertically on small screens */
         align-items: center;
+        padding: 10px;
+    }
+
+    #portfolio-left, #portfolio-right {
+        width: 100%; /* Ensure full width on mobile */
+        padding: 10px;
+    }
+
+    #about-contact-container {
+        flex-direction: column; /* Stack About Me and Contact sections vertically */
+        align-items: center;
+        padding: 10px;
+    }
+
+    #resume-section {
+        width: 100%; /* Ensure resume section takes full width on mobile */
+        padding: 15px;
+    }
+
+    .planet, #sun {
+        width: 30px; /* Reduce planet and sun sizes for smaller screens */
+        height: 30px;
+    }
+
+    #sun {
+        width: 60px;
+        height: 60px;
     }
 }
