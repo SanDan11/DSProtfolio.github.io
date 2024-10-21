@@ -191,7 +191,7 @@ li {
 
 #stars, .planet, #sun {
     position: absolute;
-    z-index: -1; /* Make sure they are behind the main content */
+    z-index: -1;
 }
 
 .planet, #sun {
@@ -206,7 +206,7 @@ li {
     background-color: #fff;
     width: 50px;
     height: 50px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adds a subtle glow */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); 
 }
 
 /* Individual planet styles */
@@ -303,7 +303,7 @@ li {
 }
 
   #mercury, #venus, #earth, #mars, #jupiter, #saturn, #uranus, #neptune {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adds a subtle glow */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 @keyframes orbit-mercury {
@@ -349,33 +349,33 @@ li {
 /* Media queries for mobile devices */
 @media (max-width: 600px) {
     #center_title h1 {
-        font-size: 2rem; /* Make the title smaller on smaller screens */
+        font-size: 2rem;
     }
 
     #portfolio-container {
-        flex-direction: column; /* Stack the sections vertically on small screens */
+        flex-direction: column;
         align-items: center;
         padding: 10px;
     }
 
     #portfolio-left, #portfolio-right {
-        width: 100%; /* Ensure full width on mobile */
+        width: 100%;
         padding: 10px;
     }
 
     #about-contact-container {
-        flex-direction: column; /* Stack About Me and Contact sections vertically */
+        flex-direction: column;
         align-items: center;
         padding: 10px;
     }
 
     #resume-section {
-        width: 100%; /* Ensure resume section takes full width on mobile */
+        width: 100%;
         padding: 15px;
     }
 
     .planet, #sun {
-        width: 30px; /* Reduce planet and sun sizes for smaller screens */
+        width: 30px; 
         height: 30px;
     }
 
