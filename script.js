@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const numStars = 200; // Adjust the number of stars as needed
+    const numStars = 200;
     const starsContainer = document.getElementById('stars');
     
     function randomInRange(min, max) {
@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
         star.style.top = y + 'px';
         starsContainer.appendChild(star);
 
-        // Randomly adjust the animation delay for each star
-        star.style.animationDelay = randomInRange(0, 5) + 's'; // Adjust the range of delay as needed
+
+        star.style.animationDelay = randomInRange(0, 5) + 's';
     }
 
     function generateStars() {
-        starsContainer.innerHTML = ''; // Clear existing stars
+        starsContainer.innerHTML = '';
         for (let i = 0; i < numStars; i++) {
             createStar();
         }
@@ -28,6 +28,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
     generateStars();
 
-    // Recalculate stars when the window is resized
     window.addEventListener('resize', generateStars);
 });
